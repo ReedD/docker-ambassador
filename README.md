@@ -2,6 +2,7 @@
 
 For information about the docker ambassador linking pattern
 check out this link [here](https://docs.docker.com/articles/ambassador_pattern_linking).
+The docker repository for this is located [here](https://registry.hub.docker.com/u/reedd/ambassador/).
 
 ## Busybox
 
