@@ -1,11 +1,11 @@
 # Docker Ambassador
 
-For information about the docker ambassador linking pattern 
-check out this link [here](https://docs.docker.com/articles/ambassador_pattern_linking).  
+For information about the docker ambassador linking pattern
+check out this link [here](https://docs.docker.com/articles/ambassador_pattern_linking).
 
 ## Busybox
 
-To start from scratch you need to first build the busybox image. 
+To start from scratch you need to first build the busybox image.
 The script `mkrootfs.sh` is a helper to build `rootfs.tar`. The
 tarmaker installs the `busybox-static` Ubuntu package and uses
 it as the base for the newly built image. Beyond that, it also
@@ -30,8 +30,8 @@ Once you have the busybox built you can use the `Dockerfile` [^2] in the root
 of this repository to build the ambassador:
 
 ```
-docker build -t ReedD/ambassador .
-docker tag ReedD/ambassador ambassador
+docker build -t reedd/ambassador .
+docker tag reedd/ambassador ambassador
 ```
 
 To run it on a remote host, you can use:
@@ -59,7 +59,7 @@ If you want to access your ambassador locally you can simply add the `-p` option
 
 #### Boot2Docker Notes
 
-If you want the ambassador to connect to the localhost of the machine that's running your Boot2Docker VM you can do it with the IP address `10.0.2.2` 
+If you want the ambassador to connect to the localhost of the machine that's running your Boot2Docker VM you can do it with the IP address `10.0.2.2`
 
 ```
 docker run -t -i \
