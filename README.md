@@ -58,9 +58,9 @@ docker run -t -i \
 
 If you want to access your ambassador locally you can simply add the `-p` option with the ports you'd like to use i.e. `-p 3306:3306`.
 
-#### Boot2Docker Notes
+#### Docker Machine Notes
 
-If you want the ambassador to connect to the localhost of the machine that's running your Boot2Docker VM you can do it with the IP address `10.0.2.2`
+If you want the ambassador to connect to the localhost of the machine that's running your Docker Machine VM you can do it with the IP address `10.0.2.2`
 
 ```
 docker run -t -i \
